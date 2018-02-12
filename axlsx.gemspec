@@ -16,11 +16,13 @@ Gem::Specification.new do |s|
   eof
   s.files = Dir.glob("{lib/**/*,examples/**/*.rb,examples/**/*.jpeg}") + %w{ LICENSE README.md Rakefile CHANGELOG.md .yardopts .yardopts_guide }
   s.test_files  = Dir.glob("{test/**/*}")
+  s.metadata['allowed_push_host'] = 'https://gems.salsify.com'
 
   s.add_runtime_dependency 'nokogiri', '>= 1.4.1'
   s.add_runtime_dependency 'rubyzip', '~> 1.2.1'
   s.add_runtime_dependency "htmlentities", "~> 4.3.1"
 
+  s.add_development_dependency 'salsify_gem'
   s.add_development_dependency 'yard'
   s.add_development_dependency 'kramdown'
   s.add_development_dependency 'timecop', "~> 0.6.1"

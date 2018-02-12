@@ -1,5 +1,8 @@
 require File.expand_path(File.dirname(__FILE__) + '/lib/axlsx/version.rb')
 
+require 'bundler/gem_tasks'
+require 'salsify_gem'
+
 task :build => :gendoc do
   system "gem build axlsx.gemspec"
 end

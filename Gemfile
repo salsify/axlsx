@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'https://gems.salsify.com'
 gemspec
 
 group :test do
