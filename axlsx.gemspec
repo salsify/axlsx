@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.metadata['allowed_push_host'] = 'https://gems.salsify.com'
 
   s.add_runtime_dependency 'nokogiri', '>= 1.4.1'
-  s.add_runtime_dependency 'rubyzip', '~> 1.2.1'
+  s.add_runtime_dependency 'rubyzip', '~> 1.3.0'
   s.add_runtime_dependency "htmlentities", "~> 4.3.1"
 
   s.add_development_dependency 'salsify_gem'
